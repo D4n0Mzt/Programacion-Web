@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+</head>
+
+
+<body>
+    <form action="formsubmit.co/the.daniel.gtz@gmail.com" method="post">
+        <div class="contenedor">
+            <header>
+                <h1>Contactos</h1>
+            </header>
+         
+        <div class="nombre">
+            <label for="">Nombre</label>
+            <Input type="text" id="nombre" placeholder="Escribe aqui tu nombre..." required> <br> 
+         </div>
+
+         <div class="fechaNacimientos">
+            <label for="">Fecha de Nacimiento</label>
+            <Input type="date" name="fechaNac" id="fechaNac" required> <br>
+         </div> 
+
+         <div class="sexo">
+            <label for="">Sexo</label>
+            <li>
+            <Input type="radio" name="masculino" id="masculino" required>
+            <label for="">Masculino</label>
+            <Input type="radio" name="femenino" id="femenino" required> 
+            <label for="">Femenino</label>
+            </li>
+            </div>
+            <div class="lugarNacimiento">
+                <label for="">Lugar de Nacimiento</label>
+                <select name="lugNac" id="lugNac">
+                    <option value="Sinaloa">Sinaloa</option>
+                    <option value="Sonora">Sonora</option>
+                    <option value="Nayarit">Nayarit</option>
+                    <option value="Durango">Durango</option>
+                    <option value="Baja California">Baja California</option>
+                </select>
+            
+
+            </div>   
+            <div class="poblacion">
+                <label for="">Poblacion</label>
+                <input type="text" name="poblacion" id="poblacion" required>
+            </div>    
+            
+            <div class="idiomas">
+                <input type="checkbox" name="español" id="español">
+                <label for="">Español</label><br>
+                <input type="checkbox" name="ingles" id="ingles">
+                <label for="">Ingles</label><br>
+                <input type="checkbox" name="frances" id="frances">
+                <label for="">Frances</label><br>
+            </div>
+
+            <input type="email" name="correo" id="correo" placeholder="Escribe aqui tu correo..." required>
+
+            <div class="egresoPrimaria">
+                <label for="">Mes y año de egreso de primaria</label>
+                <input type="month" name="egreso" id="egreso" required>
+            </div>
+
+            <div class="habitos">
+                <label for="">Habitos Personales</label>
+                <textarea name="habitos" id="habitos" cols="30" rows="10" required placeholder="Escribe aqui tus habitos mundanos"></textarea>
+            </div>
+            
+            <div class="ingresos">
+                <label for="">Nivel de ingresos</label>
+                <input type="range" name="ingresos" id="ingresos" value="25000" list="ingresosList">
+                <datalist id="ingresosList">
+                 <option value="5000"></option>
+                 <option value="10000"></option>
+                 <option value="15000"></option>
+                 <option value="20000"></option>
+                 <option value="25000"></option>
+                 <option value="30000"></option>
+                 <option value="35000"></option>
+                 <option value="40000"></option>
+                 <option value="45000"></option>
+                 <option value="50000"></option>
+                 <option value="55000"></option>   
+                </datalist>
+                <label for="ingresosList">5000 10000 15000 20000 25000 30000 35000 40000 45000 50000 55000</label>
+            </div>
+
+            <div class="horario">
+                <label for="">Horario disponible de</label>
+                <input type="time" name="entrada" id="entrada" required> A
+                <input type="time" name="salida" id="salida" required>
+            </div>
+
+        </div>
+    <input type="submit" value="Enviar informacion">
+    <input type="reset" value="Limpiar el formulario">    
+
+    </form>
+    
+
+
+</body>
+</html>
